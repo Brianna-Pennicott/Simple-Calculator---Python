@@ -1,0 +1,7 @@
+import re
+n = input()
+if re.match(r"^[189]",n) and 
+len(n)==8:
+   print("Valid")
+else: 
+   print("Invalid")
