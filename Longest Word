@@ -1,0 +1,8 @@
+txt = input()
+
+k = txt.split()
+j = ''
+for i in k:
+   if len(i)>len(j):
+      j=i
+print(j)
