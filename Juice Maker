@@ -1,0 +1,13 @@
+class Juice:
+    def __init__(self, name, capacity):
+        self.name = name
+        self.capacity = capacity
+           return (self.name + " ("+str(self.capacity) + "L)")
+    def __add__(self, other):
+        self.capacity = self.capacity + other.capacity
+        self.name = self.name + "&" + other.name
+           return (self.name + "&" + str(self.capacity)+ "L)")
+ x = Juice("Orange", 1.5)
+ y = Juice("Apple", 2.0)
+ result = x+y
+ print(result)
